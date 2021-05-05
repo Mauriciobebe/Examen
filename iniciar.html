@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Inicio</title>
+
+    <script type="text/javascript">
+      function validar(){
+        var form2 = document.form2;
+
+        if(form2.user.value==0){
+            alert("El campo Usuario no tiene nada");
+            form2.user.value="";
+            form2.user.focus();
+            return false
+
+          }
+        if(form2.pass.value==0){
+            alert("El campo Contraseña no tiene nada");
+            form2.pass.value="";
+            form2.pass.focus();
+            return false
+            
+
+          }
+      }
+    </script>
+
+
+  </head>
+<body>
+  <center><ul class="Links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="helao.html">Helados</a></li>
+    <li><a href="iniciar.html">Iniciar sesion o registrarse</a></li>
+</ul></center>
+          <center><h1> Iniciar Sesión </h1></center>
+          
+          
+          
+          <center><div>
+            <form name="form2" action="#" method="POST">
+            <input type="text" name="user" placeholder="Usuario aqui">
+            <input type="password" name="pass" placeholder="Contraseña">
+            <input type="submit" value="Registrarse" onclick="validar();">
+            
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <a href="registracion.html"><h4>Para registrarse haz click aqui</h4></a>
+          </center></div>
+        
+</body>
+</html>

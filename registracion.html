@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Registrate</title>
+
+    <script type="text/javascript">
+      function validar(){
+        var form = document.form;
+
+        if(form.Usuario.value==0){
+            alert("El campo Usuario no tiene nada");
+            form.Usuario.value="";
+            form.Usuario.focus();
+            return false
+
+          }
+        if(form.Nombre.value==0){
+            alert("El campo Nombre no tiene nada");
+            form.Nombre.value="";
+            form.Nombre.focus();
+            return false
+
+          }
+        if(form.Edad.value==0){
+            alert("El campo Edad no tiene nada");
+            form.Edad.value="";
+            form.Edad.focus();
+            return false
+
+          }
+        if(form.Nacicion.value==0){
+            alert("El campo de la fecha de nacimiento no tiene nada");
+            form.Nacicion.value="";
+            form.Nacicion.focus();
+            return false
+
+          }
+        if(form.Celular.value==0){
+            alert("El campo Celular no tiene nada");
+            form.Celular.value="";
+            form.Celular.focus();
+            return false
+
+          }
+        if(form.Contraseña.value==0){
+            alert("El campo Contraseña no tiene nada");
+            form.Contraseña.value="";
+            form.Contraseña.focus();
+            return false
+
+          }
+      }
+    </script>
+
+  </head>
+<body>
+
+  <center><ul class="Links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="helao.html">Helados</a></li>
+    <li><a href="iniciar.html">Iniciar sesion o registrarse</a></li>
+</ul></center>
+
+  <center>
+          
+    <h2> Registrarse </h2>
+          <form action="#" name="form" method="POST" action="Base.php">
+            <input type="text" name="Usuario" placeholder="Usuario">
+            <input type="text" name="Nombre" placeholder="Nombre">
+            <input type="number" name="Edad" placeholder="Edad">
+            <h3>Fecha de Nacimiento</h3>
+            <input type="date" name="Nacicion" placeholder="Nacicion">
+            <h3>Contacto</h3>
+            <input type="tel" name="Celular" placeholder="Celular">
+            <input type="password" name="Contraseña" placeholder="Contraseña">
+            <input type="submit" value="Registrarse" onclick="validar();">
+          </form>
+          
+  </center>
+  <br><br><br><br><br>
+  <center><a href="iniciarsesion.html"><h4> Iniciar Sesión </h4></a></center>
+</body>
+</html>
